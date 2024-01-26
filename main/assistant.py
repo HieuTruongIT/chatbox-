@@ -19,6 +19,7 @@ def speech_to_text():
             recognizer.adjust_for_ambient_noise(source)
             audio = recognizer.listen(source)
 
+        # chatbox simple if you need it
         try:
             text = recognizer.recognize_google(audio, language='vi-VN')
             print(text)  # Text user says to the robot
